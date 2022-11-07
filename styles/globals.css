@@ -1,0 +1,72 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+:root {
+    --black: #0d0d0d;
+    --rojo: #8c0303;
+    --gris: #797f8c;
+    --tomate: #a62139;
+    --rojof: #590209;
+    --rojos: #fde4e5;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: overlay;
+    background-image: linear-gradient(
+        45deg,
+        hsl(240deg 63% 59%) 0%,
+        hsl(270deg 43% 52%) 20%,
+        hsl(306deg 36% 47%) 40%,
+        hsl(332deg 45% 51%) 60%,
+        hsl(348deg 56% 53%) 80%,
+        hsl(0deg 67% 55%) 100%
+    );
+}
+
+/* layout */
+.styleListOptionHeaderHover:hover {
+    background: var(--rojos);
+    color: var(--rojof);
+}
+
+::-webkit-scrollbar {
+    height: 0.8rem;
+    width: 0.8rem;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:horizontal {
+    background: var(--rojof);
+    border-radius: 0.2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        color-scheme: dark;
+    }
+    body {
+        color: white;
+        background: black;
+    }
+}
