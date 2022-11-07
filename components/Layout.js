@@ -25,6 +25,10 @@ const Layout = ({ title, children }) => {
             <Head>
                 <title>{title ? `${title} - Digmon App` : "Digmon App"}</title>
                 <meta name="description" content="Digimon Website" />
+                <meta
+                    http-equiv="Content-Security-Policy"
+                    content="upgrade-insecure-requests"
+                />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Container>
@@ -74,8 +78,12 @@ const Layout = ({ title, children }) => {
                 </header>
                 <main>{children}</main>
                 <ContainerFooter>
-                    <span style={{margin: "0.3rem 0"}}>App created To Practice</span>
-                    <span style={{margin: "0.3rem 0"}}>Created by: rodericksanchezmeza@gmail.com</span>
+                    <span style={{ margin: "0.3rem 0" }}>
+                        App created To Practice
+                    </span>
+                    <span style={{ margin: "0.3rem 0" }}>
+                        Created by: rodericksanchezmeza@gmail.com
+                    </span>
                     <Link
                         href="https://github.com/roderickSa"
                         legacyBehavior
