@@ -23,7 +23,6 @@ export default function Home() {
     const isFetching = useSelector((state) => state.digimon.isFetching)
     const dispatch = useDispatch()
     useEffect(() => {
-        console.log("render first useeffect")
         getDigimons()
         window.addEventListener("scroll", handleScroll)
 
@@ -33,7 +32,6 @@ export default function Home() {
     }, [])
     useEffect(() => {
         if (!isFetching) return
-        console.log("render second useeffect")
 
         getDigimons()
     }, [isFetching])
@@ -61,12 +59,11 @@ export default function Home() {
         ) {
             return
         }
-        console.log("event scroll")
         dispatch(setIsFetching(true))
     }
     return (
         <>
-            <Layout title="Home">
+            <Layout title="Digimon Home Page" description="Digimon Home Page">
                 {digimons.length <= 0 && !isFetching ? (
                     <Loading />
                 ) : (

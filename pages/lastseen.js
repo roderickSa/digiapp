@@ -13,7 +13,10 @@ const LastseenScreen = () => {
     }, [])
     return (
         <>
-            <Layout title="Ultimos Vistos">
+            <Layout
+                title="Ultimos Digimons Vistos"
+                description="Ultimos Digimons Vistos"
+            >
                 <div>
                     <div>
                         <center>

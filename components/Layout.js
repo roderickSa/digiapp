@@ -8,7 +8,7 @@ import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { setLastDigimons } from "../features/slice/digimonSlice"
 
-const Layout = ({ title, children }) => {
+const Layout = ({ title, description = "digimon app", children }) => {
     const router = useRouter()
     const { pathname } = router
     const dispatch = useDispatch()
@@ -25,10 +25,13 @@ const Layout = ({ title, children }) => {
             <Head>
                 <title>{title ? `${title} - Digmon App` : "Digmon App"}</title>
                 <meta name="description" content="Digimon Website" />
+                <meta charset="utf-8" />
                 <meta
-                    http-equiv="Content-Security-Policy"
-                    content="upgrade-insecure-requests"
+                    name="viewport"
+                    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
                 />
+                <meta name="language" content="spanish" />
+                <meta name="description" content={description} />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Container>

@@ -29,7 +29,7 @@ const SearchScreen = () => {
     }
     return (
         <>
-            <Layout title="Search Digimon">
+            <Layout title="Search Digimons" description="Search Digimons">
                 {!termino ? (
                     <center>
                         <b>Ingrese un nombre a buscar</b>
