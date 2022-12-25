@@ -24,15 +24,14 @@ const Layout = ({ title, description = "digimon app", children }) => {
         <>
             <Head>
                 <title>{title ? `${title} - Digmon App` : "Digmon App"}</title>
-                <meta name="description" content="Digimon Website" />
-                <meta name="description" content="DigiApp" />
+                <meta name="description" content="Digimon Website DigiApp" />
                 <meta charset="utf-8" />
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
                 />
                 <meta name="language" content="spanish" />
-                <meta name="description" content={description} />
+                {/* <meta name="description" content={description} /> */}
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Container>
