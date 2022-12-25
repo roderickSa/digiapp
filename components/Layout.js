@@ -25,6 +25,7 @@ const Layout = ({ title, description = "digimon app", children }) => {
             <Head>
                 <title>{title ? `${title} - Digmon App` : "Digmon App"}</title>
                 <meta name="description" content="Digimon Website" />
+                <meta name="description" content="DigiApp" />
                 <meta charset="utf-8" />
                 <meta
                     name="viewport"
@@ -47,7 +48,7 @@ const Layout = ({ title, description = "digimon app", children }) => {
                                             color: "#fff",
                                         }}
                                     >
-                                        Home
+                                        DigiApp
                                     </a>
                                 </Link>
                             </ItemLeftList>
