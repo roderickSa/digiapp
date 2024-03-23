@@ -11,7 +11,7 @@ const ItemEvolution = ({ digimonEvolution }) => {
                         <ParagraphName>Digimon not found</ParagraphName>
                     </ContentName>
                     <Image
-                        src="https://cafedigimonbucket.s3.amazonaws.com/404.png"
+                        src="https://res.cloudinary.com/dmys2afnl/image/upload/v1711221002/DIGIMON/noimage_ynk0dq.png"
                         alt="404"
                         width={210}
                         height={210}

@@ -29,11 +29,13 @@ export default function Home() {
         return () => {
             window.removeEventListener("scroll", handleScroll)
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     useEffect(() => {
         if (!isFetching) return
 
         getDigimons()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isFetching])
     const getDigimons = async () => {
         const seconds = page === 1 ? 500 : 0

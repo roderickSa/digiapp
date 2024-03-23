@@ -11,11 +11,17 @@ const nextConfig = {
         styledComponents: true,
     },
     images: {
-        domains: ["cafedigimonbucket.s3.amazonaws.com"],
+        domains: ["cafedigimonbucket.s3.amazonaws.com", "res.cloudinary.com"],
         remotePatterns: [
             {
                 protocol: "https",
                 hostname: "cafedigimonbucket.s3.amazonaws.com",
+                port: "",
+                pathname: "/*",
+            },
+            {
+                protocol: "https",
+                hostname: "res.cloudinary.com",
                 port: "",
                 pathname: "/*",
             },

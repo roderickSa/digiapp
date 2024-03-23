@@ -21,7 +21,7 @@ const DetailDigimon = ({
                                 <Image
                                     src={
                                         images[0]?.href ||
-                                        "https://cafedigimonbucket.s3.amazonaws.com/404.png"
+                                        "https://res.cloudinary.com/dmys2afnl/image/upload/v1711221002/DIGIMON/noimage_ynk0dq.png"
                                     }
                                     alt={name || "404"}
                                     width={320}
@@ -29,7 +29,7 @@ const DetailDigimon = ({
                                 />
                             ) : (
                                 <Image
-                                    src="https://cafedigimonbucket.s3.amazonaws.com/404.png"
+                                    src="https://res.cloudinary.com/dmys2afnl/image/upload/v1711221002/DIGIMON/noimage_ynk0dq.png"
                                     alt="404"
                                     width={320}
                                     height={320}
